@@ -6,7 +6,7 @@ public class GestionRequetes {
     //Attributs
 
 
-    private static Requete[] requetes = new Requete[10];
+    private static Requete[] requetes = new Requete[1];
     private static int taille = 0;
 
     //Mutateurs et accesseurs
@@ -23,7 +23,7 @@ public class GestionRequetes {
 
     private static void tableauAdd(Requete r){
         if(taille == requetes.length){
-            Requete[] temp = new Requete[requetes.length * 2];
+            Requete[] temp = new Requete[requetes.length + 1];
             for(int i = 0; i < requetes.length; i++){
                 temp[i] = requetes[i];
             }
